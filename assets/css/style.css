@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    background-color: rgb(209, 182, 147); 
+}
+
+body {
+    width: 100vw;
+    height: 100vh;    
+}
+.cronometro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#contador {
+    position: absolute;
+    color: aliceblue;
+    font-size: 50px;
+    background-color: black;
+}
+
+.start, .pause, .clean {
+    cursor: pointer;
+}
+
+@media(max-width: 480px) {
+   .cronometro {
+    margin-top: 150px;
+    margin-right: 20px;
+   }
+
+   .buttons {
+    margin-right: 25px;
+   }
+
+    .img {
+    width: 400px;
+   }
+}
