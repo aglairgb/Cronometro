@@ -1,22 +1,22 @@
 * {
     margin: 0;
     padding: 0;
-    border: none;
-    box-sizing: border-box;
-    background-color: rgb(209, 182, 147); 
+    box-sizing: border-box;   
 }
 
 body {
-    width: 100vw;
-    height: 100vh;    
+    background: linear-gradient(-45deg, #092e32, #130827);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
 }
+
 .cronometro {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.buttons {
+.buttons {  
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,16 +35,29 @@ body {
 }
 
 @media(max-width: 480px) {
-   .cronometro {
-    margin-top: 150px;
-    margin-right: 20px;
+
+    .cronometro {
+    margin-top: 40px;
+    margin-right: 5px;
    }
 
    .buttons {
-    margin-right: 25px;
+    margin-left: 2px;
    }
 
     .img {
     width: 400px;
    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
